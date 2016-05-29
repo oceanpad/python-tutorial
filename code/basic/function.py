@@ -1,0 +1,25 @@
+'''
+# build in Functions
+print(abs(100))
+print(abs(-20))
+print(max(-20, 20, 30, 40))
+print(int('-20'))
+print(str(1.234))
+print(bool(''))
+print(bool(12))
+#assign Functions name
+a = abs
+print(a(12))
+'''
+# define function
+def myAbs(x):
+    if not isinstance(x,(int, float)):
+        raise TypeError('bad operand type')
+    if x > 0:
+        return x
+    else:
+        return -x
+
+# null function(Use pass)
+def nop():
+    pass

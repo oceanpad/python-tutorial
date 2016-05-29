@@ -40,3 +40,6 @@ if 1>2:
     print("ok")
 '''
 
+d = {'hai':98, 'dhusi':99}
+print(d)
+print(d['hai'])
