@@ -1,10 +1,13 @@
 #coding=utf-8
-import urllib
-import urllib2
-import re
+import urllib3
+http = urllib3.PoolManager()
 
-url = "https://www.baidu.com"
-request = urllib2.Request(url)
-page = urllib2.urlopen(url)
-html = page.read()
-print(html)
+'''
+r = http.request('get', 'http://oceanpad.github.io')
+
+with open('page_source.html', 'w') as fid:
+    fid.write(str(r.data))
+'''
+r = http.request('GET', 'http://www.baidu.com/')
+print(r.status)
+print(r.headers['server'])
