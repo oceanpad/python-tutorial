@@ -1,0 +1,13 @@
+numbers = range(101)
+sum = 0
+for i in numbers :
+    sum = sum + i
+print(sum)
+
+
+sum = 0
+n = 100
+while n > 0:
+    sum = sum + n
+    n = n - 1
+print(sum)
