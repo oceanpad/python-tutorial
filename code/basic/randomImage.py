@@ -2,7 +2,9 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 import random
 
-# 随机字母:
+# 随机字母(A-Z):
+# 97-122 a-2
+# 65-90 A-Z
 def rndChar():
     return chr(random.randint(65, 90))
 
